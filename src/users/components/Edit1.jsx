@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { FaEdit } from 'react-icons/fa'
+import { FaEdit, FaPen } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
+
 
 function Edit1 () {
     const [offcanvasStatus,setOffcanvasStatus] = useState(false)
@@ -25,6 +26,7 @@ function Edit1 () {
                         <input type="file" id="uploadImg" hidden />
                         <img style={{width:'150px',height:'150px',borderRadius:'50%'}} src="https://img.freepik.com/premium-photo/happy-man-ai-generated-portrait-user-profile_1119669-1.jpg" alt="profile" />
                     </label>
+                    <button style={{marginTop:'-20px'}} className='bg-yellow-300 p-2 text-white rounded'><FaPen/></button>
                     {/* name */}
                     <div className="mt-10 mb-3 w-full px-5">
                         <input type="text" placeholder='Username' className='border border-gray-200 p-2 rounded w-full' />
